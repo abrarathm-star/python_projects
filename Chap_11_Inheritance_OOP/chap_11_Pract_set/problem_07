@@ -1,0 +1,21 @@
+# class Vector():
+#     def __init__(self,x,y,z):
+#         self.x=x
+#         self.y=y
+#         self.z=z
+#     def __len__(self):
+#         return 3
+    
+# v=Vector(2,3,4)
+# print(len(v))
+
+
+"""more sophisticated method"""
+class Vector():
+    def __init__(self,values):
+        self.values=values
+    def __len__(self):
+        return len(self.values)
+vector=([5,3,7])
+v=Vector(vector)
+print(len(v))
