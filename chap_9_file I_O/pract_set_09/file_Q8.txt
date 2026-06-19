@@ -1,0 +1,5 @@
+#### is a high-level, interpreted programming language known for its clear syntax and readability.
+It supports multiple programming paradigms, including structured, object-oriented, and functional programming.
+Developers love it for its vast library ecosystem and its versatility in web development and data science.
+Its name was actually inspired by Monty Python rather than the snake.
+Today, it remains one of the most popular languages for beginners and experts alike.
