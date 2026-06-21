@@ -1,25 +1,39 @@
-# Q.1 
-class Vector_2D():
-    def __init__(self,values):
-        self.values=values
-class Vector_3D(Vector_2D):
-    def __init__(self,values,z):
-        super().__init__(values)
-        self.z=z
-    def __add__(self, other):
-        added_vector=[]
-        for i in range(len(self.values)):
-            added_vector.append(self.values[i]+other.values[i])
-        added_vector.append(self.z+other.z)
-        return added_vector
+# # Q.1 
+# class Vector_2D():
+#     def __init__(self,values):
+#         self.values=values
+# class Vector_3D(Vector_2D):
+#     def __init__(self,values,z):
+#         super().__init__(values)
+#         self.z=z
+#     def __add__(self, other):
+#         added_vector=[]
+#         for i in range(len(self.values)):
+#             added_vector.append(self.values[i]+other.values[i])
+#         added_vector.append(self.z+other.z)
+#         return added_vector
     
 
 
-v2xy=([9,5])
-vector_3D1=Vector_3D(v2xy,2)
-vector_3D2=Vector_3D(v2xy,2.035)
-print(vector_3D1+vector_3D2)
+# v2xy=([9,5])
+# vector_3D1=Vector_3D(v2xy,2)
+# vector_3D2=Vector_3D(v2xy,2.035)
+# print(vector_3D1+vector_3D2)
 
+# Q.4
+class Complex():
+    def __init__(self,complex_num):
+        self.complex_num=complex_num
+    def __add__(self, other):
+        return self.complex_num + other.complex_num
+    def __mul__(self, other):
+        return self.complex_num*other.complex_num
+c1=complex(3,4)
+c2=complex(5,2)
+complex1=Complex(c1)
+complex2=Complex(c2)
+print(complex1+complex2)
+print(complex1*complex2)
 
 
 #  Q.4
