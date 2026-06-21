@@ -38,17 +38,22 @@
 class Vector():
     def __init__(self,values):
         self.values=values
-   
     
     def __add__(self, other):
-        new_vector=[]
+        vector=[]
         for i in range(len(self.values)):
-            new_vector.append(self.values[i] + other.values[i])
-        return new_vector
-
-
-vel=([2,3,6])
-tim=([4,7,2])
-velocityy=Vector(vel)
-timeee=Vector(tim)
-print(velocityy+timeee)
+            vector.append(self.values[i]+other.values[i])
+        return vector
+    
+    def __mul__(self, other):
+        dot_pro=0
+        for i in range(len(self.values)):
+            # self.values[i]*other.values[i]
+            dot_pro=dot_pro+(int(self.values[i])*int(other.values[i]))
+        return dot_pro
+v1=([2,4,5])
+v2=([6,3,9])
+vector1=Vector(v1)
+vector2=Vector(v2)
+print(vector1+vector2)
+print(vector1*vector2)
